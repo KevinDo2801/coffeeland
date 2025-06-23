@@ -1,0 +1,51 @@
+/* FeaturesSection.css */
+.features-section{
+  background:#fff;
+  padding:70px 20px 60px 20px;
+  text-align:center;
+}
+.features-title{
+  font-size:2rem;
+  font-weight:700;
+  color:#18181b;
+  margin-bottom:40px;
+}
+.features-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:32px;
+  max-width:900px;
+  margin:0 auto;
+}
+.feature-card{
+  background:#f8fafc;
+  border-radius:18px;
+  box-shadow:0 2px 8px rgba(24,24,27,0.04);
+  padding:36px 24px 28px 24px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  transition:box-shadow .2s;
+}
+.feature-card:hover{
+  box-shadow:0 6px 24px rgba(24,24,27,0.10);
+}
+.feature-icon{
+  font-size:2.5rem;
+  margin-bottom:18px;
+}
+.feature-name{
+  font-size:1.2rem;
+  font-weight:700;
+  color:#18181b;
+  margin-bottom:10px;
+}
+.feature-desc{
+  color:#52525b;
+  font-size:1rem;
+  line-height:1.6;
+}
+@media(max-width:900px){
+  .features-grid{grid-template-columns:1fr;gap:24px;}
+  .features-section{padding:40px 8px 30px 8px;}
+} 
